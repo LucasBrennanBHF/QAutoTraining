@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleCalculator\Calculator.csproj" />
+  </ItemGroup>
+
 </Project>
