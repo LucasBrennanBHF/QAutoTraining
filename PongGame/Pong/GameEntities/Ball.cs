@@ -22,19 +22,7 @@ namespace Pong.GameEntities
 
         public override void Update()
         {
-            XPos += _xDirection * _speed;
-            YPos += _yDirection * _speed;
-
-            if (XPos + Texture.Width >= _screenBoundaries[(int)ScreenBound.X] || XPos <= 0) 
-            {
-                _xDirection *= -1;
-                XPos += _xDirection * _speed;
-            }
-            if (YPos + Texture.Height >= _screenBoundaries[(int)ScreenBound.Y] || YPos <= 0) 
-            {
-                _yDirection *= -1;
-                YPos += _yDirection * _speed;
-            }
+            // TODO: Movement code goes here
         }
 
         public void Reset()

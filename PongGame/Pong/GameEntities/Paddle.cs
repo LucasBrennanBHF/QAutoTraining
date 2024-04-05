@@ -28,44 +28,7 @@ namespace Pong.GameEntities
 
         public override void Update()
         {
-            if (_isPlayer1)
-            {
-                if (_listener.IsKeyDown(Keys.W))
-                {
-                    YPos -= _speed;
-                    if (YPos <= 0) 
-                    {
-                        YPos += _speed;
-                    }
-                }
-                else if (_listener.IsKeyDown(Keys.S))
-                {
-                    YPos += _speed;
-                    if (YPos >= _screenBoundaries[(int)ScreenBound.Y] - Texture.Height)
-                    {
-                        YPos -= _speed;
-                    }
-                }
-            }
-            else
-            {
-                if (_listener.IsKeyDown(Keys.Up))
-                {
-                    YPos -= _speed;
-                    if (YPos <= 0)
-                    {
-                        YPos += _speed;
-                    }
-                }
-                else if (_listener.IsKeyDown(Keys.Down))
-                {
-                    YPos += _speed;
-                    if (YPos >= _screenBoundaries[(int)ScreenBound.Y] - Texture.Height)
-                    {
-                        YPos -= _speed;
-                    }
-                }
-            }
+            // TODO: Movement code goes here
         }
     }
 }
