@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    public class AdvancedCalculator : SimpleCalculator, ICalculator, IAdvancedCalculator
+    public class AdvancedCalculator : SimpleCalculator, IAdvancedCalculator
     {
         public double Square(double number)
         {

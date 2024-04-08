@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    public interface IAdvancedCalculator
+    public interface IAdvancedCalculator : ICalculator
     {
         double Square(double number);
         double CalculateRectangleArea(double width, double height);

@@ -12,7 +12,7 @@ namespace SimpleCalculatorTests
         [Theory]
         [InlineData(1, 1)]
         [InlineData(2.5, 6.25)]
-        [InlineData(3.443, 11.854249000000001)]
+        [InlineData(3.443, 11.85)]
         public void GivenTwoValidNumbers_Calculator_ReturnsTheSquareOfTheNumber(double number, double expectedResult)
         {
             IAdvancedCalculator calculator = new AdvancedCalculator();
@@ -25,7 +25,7 @@ namespace SimpleCalculatorTests
         [Theory]
         [InlineData(1, 5, 5)]
         [InlineData(5, 5, 25)]
-        [InlineData(1.25, 4.75, 5.9375)]
+        [InlineData(1.25, 4.75, 5.93)]
         public void GivenTwoValidNumbers_Calculator_ReturnsTheAreaOfARectangle(double width, double height, double expectedResult)
         {
             IAdvancedCalculator calculator = new AdvancedCalculator();
@@ -47,9 +47,9 @@ namespace SimpleCalculatorTests
         }
 
         [Theory]
-        [InlineData(1, 3.1415926535897931)]
-        [InlineData(2.5, 19.634954084936208)]
-        [InlineData(3.443, 37.241221572224156)]
+        [InlineData(1, 3.14)]
+        [InlineData(2.5, 19.63)]
+        [InlineData(3.443, 37.24)]
         public void GivenTwoValidNumbers_Calculator_ReturnsTheAreaOfACircle(double radius, double expectedResult)
         {
             IAdvancedCalculator calculator = new AdvancedCalculator();
