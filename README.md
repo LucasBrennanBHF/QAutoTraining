@@ -17,3 +17,4 @@ After these projects are finished and the QAUTO test area is set up you'll move 
 
 It is also up to you if you want to review the code at the end of each project or after all project. If you have any questions be sure to ask. I also strongly encourage working with other QAs and asking for their help while working through these as there is no one right answer to any of these projects.
 
+Each project will have a Program or Start up file, you can use this to run your code and output it to the console
