@@ -11,6 +11,8 @@ There are some behaviors the ball and paddles should have:
 - If the paddle hits the top of bottom of the screen it should remain there
 - Paddles are controlled by the user, Player1 uses W and S to move up and down, Player2 uses up arrow and down arrow
 - The ball should move on its own in a diagonal direction
+
+For these you just need to define the logic, running the game after a change will also help determine if the changes made are scuessful
  
  This project makes use of some more complex logic as well as OOP, Selection statements, Nested Selection statements and Concepts in earlier projects.
 
