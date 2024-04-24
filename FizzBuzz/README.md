@@ -18,3 +18,5 @@ This project will make use of if statements and loops bellow is some helpful doc
 
 - [C# Selection Statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements)
 - [C# Loops](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements)
+
+You can use loops to output all of the values, Unit tests in this project will also help determine if it is working correctly
