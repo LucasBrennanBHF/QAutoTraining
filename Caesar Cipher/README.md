@@ -29,4 +29,4 @@ Other helpful information / Tips
 - Its best to break the problem down and work in increments and solve one thing at a time - you can use your ticket, this readme file or slacknotes to help with this
 
 ### Your Notes
-###-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
