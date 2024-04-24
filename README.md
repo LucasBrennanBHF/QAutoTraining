@@ -21,6 +21,7 @@ Each project will have a Program or Start up file, you can use this to run your 
 
 To run your program rather than using the Test explorer, at the top of visual stuido there will be a simlar green button which will run the program. You can use the following to take inputs and outputs
 
-``` Console.WriteLine("Text to output"); 
+```
+    Console.WriteLine("Text to output"); 
     string inputText = Console.ReadLine();
 ```
