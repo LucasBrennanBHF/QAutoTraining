@@ -20,8 +20,6 @@ Here is some helpful documentation to get you started
 
 - [C# Selection Statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements)
 - [C# Loops](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements)
-- [C# Collections](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/collections)
-- [C# OOP](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop)
 
 Other helpful information / Tips
 
