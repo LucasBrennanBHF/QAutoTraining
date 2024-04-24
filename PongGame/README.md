@@ -14,7 +14,13 @@ There are some behaviors the ball and paddles should have:
  
  This project makes use of some more complex logic as well as OOP, Selection statements, Nested Selection statements and Concepts in earlier projects.
 
-This is an open ended task and there is no one way which is correct, due to that there's not much documentation that will help that hasn't already been covered
+This is an open ended task and there is no one way which is correct, due to that there's not much documentation that will help that hasn't already been covered but these inparticular will help
+
+- [C# Selection Statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements)
+- [C# Loops](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements)
+- [C# Collections](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/collections)
+- [C# OOP](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop)
+
 
 Here is some advice to help get started
 
