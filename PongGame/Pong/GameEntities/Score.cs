@@ -1,10 +1,12 @@
 ﻿using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using System;
 
 namespace Pong.GameEntities
 {
     public class Score : Entity
     {
+        ContentManager _content;
         public int PlayerScore { get; private set; }
 
         public Score(int xPos, int yPos) : base(xPos, yPos)
@@ -14,7 +16,8 @@ namespace Pong.GameEntities
 
         public override void Initialize(ContentManager content)
         {
-            Texture = content.Load<Texture2D>("Number0");
+            _content = content;
+            Texture = _content.Load<Texture2D>("Number0");
         }
 
         public override void OnCollide()
@@ -24,12 +27,15 @@ namespace Pong.GameEntities
 
         public override void Update()
         {
-            //Do Nothing
-        }
-        public void UpdateScore(ContentManager content) 
-        {
             PlayerScore++;
-            if (PlayerScore <= 5) Texture = content.Load<Texture2D>("Number" + PlayerScore);
+            if (PlayerScore <= 5) Texture = _content.Load<Texture2D>("Number" + PlayerScore);
+            else if (PlayerScore > 5) Environment.Exit(0);
+        }
+
+        public override void Reset()
+        {
+            PlayerScore = 0;
+            Texture = _content.Load<Texture2D>("Number0");
         }
     }
 }

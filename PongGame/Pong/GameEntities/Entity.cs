@@ -4,7 +4,7 @@ using System.Drawing;
 
 namespace Pong.GameEntities
 {
-    public abstract class Entity
+    public abstract class Entity : IEntity, IPongDrawable
     {
         protected int _xDirection, _yDirection;
 
@@ -35,5 +35,6 @@ namespace Pong.GameEntities
         public abstract void Initialize(ContentManager content);
         public abstract void Update();
         public abstract void OnCollide();
+        public abstract void Reset();
     }
 }

@@ -10,7 +10,7 @@ namespace PongGameUnitTests.UnitTests
 {
     public class BallUnitTests : SharedTests
     {
-        Entity _sutBall;
+        IEntity _sutBall;
 
         public BallUnitTests() : base()
         {
@@ -63,7 +63,7 @@ namespace PongGameUnitTests.UnitTests
             _sutBall = new Ball(50, 50, 1000, 1000);
             _sutBall.Initialize(_kernel.Content);
 
-            Assert.True(_sutBall.GetHitBox() != null);
+            Assert.True(!((IPongDrawable)_sutBall).GetHitBox().IsEmpty);
         }
     }
 }

@@ -19,7 +19,7 @@ namespace PongGameUnitTests.UnitTests
         [Fact]
         public void GivenAValidScore_Score_UpdatesThePlayerScore()
         {
-            _sutScore.UpdateScore(_kernel.Content);
+            _sutScore.Update();
 
             Assert.Equal(1, _sutScore.PlayerScore);
         }

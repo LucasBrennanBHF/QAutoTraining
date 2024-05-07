@@ -12,7 +12,7 @@ namespace PongGameUnitTests.UnitTests
 {
     public class Player2PaddleUnitTests : SharedTests
     {
-        Entity _sutPaddle;
+        IEntity _sutPaddle;
         Mock<KeyboardListener> _mockListener;
 
         public Player2PaddleUnitTests() : base()
@@ -37,7 +37,7 @@ namespace PongGameUnitTests.UnitTests
         [Fact]
         public void GivenAValidHitBox_Player2_ReturnsARectangle()
         {
-            Assert.True(_sutPaddle.GetHitBox() != null);
+            Assert.True(!((IPongDrawable)_sutPaddle).GetHitBox().IsEmpty);
         }
     }
 }

@@ -11,12 +11,12 @@ namespace Pong
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
-        private Ball _ball;
-        private Paddle _player1;
-        private Paddle _player2;
+        private IEntity _ball;
+        private IEntity _player1;
+        private IEntity _player2;
 
-        private Score _player1Score;
-        private Score _player2Score;
+        private IEntity _player1Score;
+        private IEntity _player2Score;
 
         private readonly int _xBound = 1600;
         private readonly int _yBound = 900;
@@ -71,30 +71,20 @@ namespace Pong
             _player1.Update();
             _player2.Update();
 
-            if (_ball.GetHitBox().IntersectsWith(_player1.GetHitBox()) 
-                || _ball.GetHitBox().IntersectsWith(_player2.GetHitBox())) 
+            if (((IPongDrawable)_ball).GetHitBox().IntersectsWith(((IPongDrawable)_player1).GetHitBox()) 
+                || ((IPongDrawable)_ball).GetHitBox().IntersectsWith(((IPongDrawable)_player2).GetHitBox())) 
             {
                 _ball.OnCollide();
             }
             if (_ball.XPos <= 0 + 10) 
             {
                 _ball.Reset();
-                _player2Score.UpdateScore(Content);
-
-                if (_player2Score.PlayerScore >= 5) 
-                {
-                    Environment.Exit(0);
-                }
+                _player2Score.Update();
             }
-            else if (_ball.XPos >= _xBound - _ball.Texture.Width - 10) 
+            else if (_ball.XPos >= _xBound - ((IPongDrawable)_ball).Texture.Width - 10) 
             {
                 _ball.Reset();
-                _player1Score.UpdateScore(Content);
-
-                if (_player1Score.PlayerScore >= 5)
-                {
-                    Environment.Exit(0);
-                }
+                _player1Score.Update();
             }
 
             base.Update(gameTime);
@@ -107,11 +97,11 @@ namespace Pong
             // Nothing here needs to be changed
             _spriteBatch.Begin();
 
-            _spriteBatch.Draw(_ball.Texture, new Vector2(_ball.XPos, _ball.YPos), Color.White);
-            _spriteBatch.Draw(_player1.Texture, new Vector2(_player1.XPos, _player1.YPos), Color.Black);
-            _spriteBatch.Draw(_player2.Texture, new Vector2(_player2.XPos, _player2.YPos), Color.Black);
-            _spriteBatch.Draw(_player1Score.Texture, new Vector2(_player1Score.XPos, _player1Score.YPos), Color.Black);
-            _spriteBatch.Draw(_player2Score.Texture, new Vector2(_player2Score.XPos, _player2Score.YPos), Color.Black);
+            _spriteBatch.Draw(((IPongDrawable)_ball).Texture, new Vector2(_ball.XPos, _ball.YPos), Color.White);
+            _spriteBatch.Draw(((IPongDrawable)_player1).Texture, new Vector2(_player1.XPos, _player1.YPos), Color.Black);
+            _spriteBatch.Draw(((IPongDrawable)_player2).Texture, new Vector2(_player2.XPos, _player2.YPos), Color.Black);
+            _spriteBatch.Draw(((IPongDrawable)_player1Score).Texture, new Vector2(_player1Score.XPos, _player1Score.YPos), Color.Black);
+            _spriteBatch.Draw(((IPongDrawable)_player2Score).Texture, new Vector2(_player2Score.XPos, _player2Score.YPos), Color.Black);
 
             _spriteBatch.End();
 

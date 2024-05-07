@@ -25,7 +25,7 @@ namespace Pong.GameEntities
             // TODO: Movement code goes here
         }
 
-        public void Reset()
+        public override void Reset()
         {
             XPos = (_screenBoundaries[(int)ScreenBound.X] / 2) + Texture.Height; 
             YPos = (_screenBoundaries[(int)ScreenBound.Y] / 2);
