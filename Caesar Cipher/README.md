@@ -20,10 +20,12 @@ Here is some helpful documentation to get you started
 
 - [C# Selection Statements](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements)
 - [C# Loops](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements)
-- [C# Collections](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/collections)
 
 Other helpful information / Tips
 
 - You'll be using a nested loop (loops inside of loops)
 - You'll get an error message if you don't account for the the end of the alphabet and it wrapping around (if the shift goes past Z)
-- Its best to break the problem down and work in increments and solve one thing at a time
+- Its best to break the problem down and work in increments and solve one thing at a time - you can use your ticket, this readme file or slacknotes to help with this
+
+### Your Notes
+---

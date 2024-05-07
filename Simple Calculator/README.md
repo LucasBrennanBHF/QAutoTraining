@@ -2,6 +2,8 @@
 
 This simple calculator is intended to have 4 functions. Add, Subtract, Multiply and Divide. The user gives two numbers and the calculator returns the value from that operation
 
+While not neesarry having user input for operator and chosing the operation based on that could be an extra challenge 
+
 This intention of this is to get used to different methods and simple operations. As well as the difference for integer division
 
 Bellow is some helpful documentation to get started
